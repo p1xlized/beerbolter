@@ -1,13 +1,21 @@
 import { createSignal, type Component } from "solid-js";
 import { Dynamic } from "solid-js/web";
 
-import LoyalistSM from "./factions/LoyalistSM";
-import ChaosSM from "./factions/ChaosSM";
+import LoyalistSM from "./factions/Humans/LoyalistSM";
+import ChaosSM from "./factions/Humans/ChaosSM";
+import Asuryani from "./factions/Eldars/Asuryani";
+import Necron from "./factions/Necrons/NecronDynasty";
+import AstraMilitarum from "./factions/Humans/AstraMilitarum";
+import RenegadeImperialGuard from "./factions/Humans/RenegadeGuard";
 
 const HomebrewEditor = () => {
   const themes: Record<string, Component> = {
     loyalist: LoyalistSM,
     traitor: ChaosSM,
+    asuryani: Asuryani,
+    necrons: Necron,
+    imperial_guard: AstraMilitarum,
+    renegade_imperial_guard: RenegadeImperialGuard,
   };
 
   const [selectedTheme, setSelectedTheme] = createSignal("loyalist");
@@ -32,7 +40,11 @@ const HomebrewEditor = () => {
               class="bg-slate-900 text-[#e2d6c3] border border-slate-700 px-4 py-1 font-mono text-xs uppercase tracking-tighter focus:border-orange-500 focus:outline-none hover:bg-slate-800 transition-colors cursor-pointer"
             >
               <option value="loyalist">Adeptus Astartes (Loyalist)</option>
-              <option value="traitor">Renegades (Chaos)</option>
+              <option value="traitor">Renegades (Renegades)</option>
+              <option value="imperial_guard">Imperial Guard (Loyalist)</option>
+              <option value="imperial_guard">Imperial Guard (Renegades)</option>
+              <option value="asuryani">Asuryani (Eldar)</option>
+              <option value="necrons">Necrons</option>
             </select>
           </div>
         </div>

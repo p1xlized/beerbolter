@@ -15,7 +15,7 @@ const LoyalistSM = () => {
   ];
 
   return (
-    <div class="h-full w-full bg-[#e2d6c3] p-3 text-slate-900 font-mono border-[8px] border-double border-slate-800 uppercase flex flex-col overflow-hidden">
+    <div class="h-full w-full bg-[#e2d6c3] p-2 text-slate-900 font-mono border-[8px] border-double border-slate-800 uppercase flex flex-col overflow-hidden">
       {/* HEADER: Increased text size and padding */}
       <header class="border-b-4 border-slate-900 pb-2 mb-2 shrink-0 flex justify-between items-end">
         <div class="flex-1">
@@ -140,7 +140,7 @@ const LoyalistSM = () => {
             <p class="text-[9px] font-black italic tracking-tight">
               "Thought for the day: Be strong in your ignorance."
             </p>
-            <div class="border-4 border-red-900/60 text-red-900/60 px-3 py-1 text-xs font-black rotate-[-3deg] shadow-sm">
+            <div class="border-4 border-red-900/60 text-red-900/60 px-3 py-1  text-xs font-black rotate-[-2deg] shadow-sm">
               CLASSIFIED
             </div>
           </footer>
