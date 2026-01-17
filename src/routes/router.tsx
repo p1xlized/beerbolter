@@ -5,7 +5,7 @@ import {
   Outlet,
 } from "@tanstack/solid-router";
 import { TanStackRouterDevtools } from "@tanstack/solid-router-devtools";
-import App from "../views/Home.tsx";
+import App from "./Home.tsx";
 
 // 1. Define the Root
 const rootRoute = createRootRoute({

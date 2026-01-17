@@ -1,12 +1,12 @@
 import { createSignal, type Component } from "solid-js";
 import { Dynamic } from "solid-js/web";
 
-import LoyalistSM from "./factions/Humans/LoyalistSM";
-import ChaosSM from "./factions/Humans/ChaosSM";
-import Asuryani from "./factions/Eldars/Asuryani";
-import Necron from "./factions/Necrons/NecronDynasty";
-import AstraMilitarum from "./factions/Humans/AstraMilitarum";
-import RenegadeImperialGuard from "./factions/Humans/RenegadeGuard";
+import LoyalistSM from "../views/Humans/LoyalistSM";
+import ChaosSM from "../views/Humans/ChaosSM";
+import Asuryani from "../views/Eldars/Asuryani";
+import Necron from "../views/Necrons/NecronDynasty";
+import AstraMilitarum from "../views/Humans/AstraMilitarum";
+import RenegadeImperialGuard from "../views/Humans/RenegadeGuard";
 
 const HomebrewEditor = () => {
   const themes: Record<string, Component> = {
